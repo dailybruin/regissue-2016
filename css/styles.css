@@ -1,3 +1,11 @@
 li {
   display: inline;
 }
+
+.image-slider{
+  margin: 10% 30%;
+}
+
+.description-slider{
+  margin: 10% 20%;
+}
