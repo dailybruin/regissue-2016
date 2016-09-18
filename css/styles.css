@@ -72,14 +72,8 @@ h2 {
   margin: 0 auto; /* it centers any block level element */
 }
 
-.landing-images {
-  margin: 5%;
-  width: 100%;
-}
-
 #landing-photos {
-  float: left;
-  width: 30%;
+  width: 100%;
 }
 
 .overlay {
