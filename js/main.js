@@ -18,7 +18,7 @@ function appendDataAndTemplate(name, data, type){
   var templateScript = Handlebars.compile(template);
   var context = data;
   var html = templateScript(context);
-  $(name).append(html);
+  $(name).replaceWith(html);
 }
 
 $( document ).ready(function() {
