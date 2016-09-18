@@ -12,18 +12,18 @@ $( document ).ready(function() {
         // The code below is for handlebars ---===
         // Retrieve the template data from the HTML (jQuery is used here).
 
-        // var template = $('#article').html();
-        // var templateScript = Handlebars.compile(template);
-        // var context = data;
-        // var html = templateScript(context);
-        // $("#handlebars-content").append(html);
-        //
-        //
-        // var template2 = $('#tile').html();
-        // var templateScript2 = Handlebars.compile(template2);
-        // var html2 = templateScript2(context);
-        //
-        // $('#tile-container').append(html2);
+        var template = $('#A-E').html();
+        var templateScript = Handlebars.compile(template);
+        var context = data;
+        var html = templateScript(context);
+        $("#handlebars-content").append(html);
+
+
+        var template2 = $('#tile').html();
+        var templateScript2 = Handlebars.compile(template2);
+        var html2 = templateScript2(context);
+
+        $('#tile-container').append(html2);
 
 
   	}
