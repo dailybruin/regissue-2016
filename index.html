@@ -54,7 +54,7 @@
 
       <div class="row">
         <div id="A-E-Content">
-          
+
         </div>
       </div>
     </div>
@@ -83,11 +83,7 @@
 <!-- slick js  -->
 <script type="text/javascript" src="js/slick.min.js"></script>
 
-<!-- Our JS -->
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-
-<script id="A-E" type="text/x-handlebars-template">
+<script id="handlebars-articles" type="text/x-handlebars-template">
   <div class="slider-for image-slider">
     {{#each .}}
       <div><img src="{{this.gsx$mainimageurl.$t}}" />"</div>
@@ -103,6 +99,11 @@
     {{/each}}
   </div>
 </script>
+
+<!-- Our JS -->
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
 
 </body>
 </html>
