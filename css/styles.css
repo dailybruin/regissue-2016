@@ -1,5 +1,25 @@
-li {
+.navbar {
+  text-align: center;
+  background-color: black;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.navbar ul {
+  padding: 0px;
+}
+
+.navbar li {
   display: inline;
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
 }
 
 .image-slider{
