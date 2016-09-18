@@ -61,13 +61,14 @@ $( document ).ready(function() {
            fade: true,
            asNavFor: '.slider-nav'
         });
+
         $('.slider-nav').slick({
-           slidesToShow: 3,
+           slidesToShow: 1,
            slidesToScroll: 1,
            asNavFor: '.slider-for',
            dots: true,
-           centerMode: true,
-           focusOnSelect: true
+           adaptiveHeight: true,
+           vertcal: true,
         });
 
   	}

@@ -1,5 +1,4 @@
 body{
-  background-color: gray;
 }
 
 .navbar {
@@ -27,17 +26,21 @@ h2 {
   padding-top: 100px;
 }
 
+.image-wrapper{
+  vertical-align: middle;
+}
+
 .image-slider{
-  margin: 5% 20%;
+  vertical-align: middle;
 }
 
 .description-slider{
-  margin: 5% 20%;
 }
 
 .article-images{
-  max-height: 480px;
-  align: center;
+  max-height: 80vh;
+  max-width: 50vw;
+  margin: auto;
 }
 
 #landing-photos {
