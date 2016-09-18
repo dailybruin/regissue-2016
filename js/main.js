@@ -59,7 +59,7 @@ $( document ).ready(function() {
            slidesToScroll: 1,
            arrows: false,
            fade: true,
-           asNavFor: '.slider-nav'
+           asNavFor: '.slider-nav',
         });
 
         $('.slider-nav').slick({
@@ -67,8 +67,8 @@ $( document ).ready(function() {
            slidesToScroll: 1,
            asNavFor: '.slider-for',
            dots: true,
-           adaptiveHeight: true,
-           vertcal: true,
+          //  autoplay: true,
+          //  autoplaySpeed: 4000,
         });
 
   	}
