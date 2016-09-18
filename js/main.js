@@ -54,26 +54,26 @@ $( document ).ready(function() {
         appendDataAndTemplate("#Sports-Content",SportsList, "right");
         appendDataAndTemplate("#Video-Content",VideoList, "left");
 
-        $('.slider-for').slick({
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           arrows: false,
-           fade: true,
-           asNavFor: '.slider-nav',
-        });
-
-        $('.slider-nav').slick({
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           asNavFor: '.slider-for',
-           dots: true,
-          //  autoplay: true,
-          //  autoplaySpeed: 4000,
-        });
-
   	}
-  });
+  }).done(function(){
+    $('.slider-for').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: false,
+       asNavFor: '.slider-nav',
+    });
 
-  
+    $('.slider-nav').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       asNavFor: '.slider-for',
+       dots: true,
+      //  autoplay: true,
+      //  autoplaySpeed: 4000,
+    });
+
+  }
+
+  );
 
 });

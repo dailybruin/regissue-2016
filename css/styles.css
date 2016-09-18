@@ -43,10 +43,10 @@ body{
 
 h2 {
   text-align: center;
-  padding-top: 120px;
+  padding-top: 1vh;
   font-family: 'Oswald', sans-serif;
   font-size: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -104,10 +104,11 @@ h2 {
 }
 
 .article-images{
-  max-height: 70vh;
+  max-height: 65vh;
   width: auto;
   max-width: 50vw;
-  margin: 0 auto; /* it centers any block level element */
+  margin: auto; /* it centers any block level element */
+  padding: 2.5vh 0;
 }
 
 .article-description{
