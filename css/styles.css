@@ -1,7 +1,11 @@
+body{
+  background-color: gray;
+}
+
 .image-slider{
-  margin: 10% 30%;
+  margin: 5% 20%;
 }
 
 .description-slider{
-  margin: 10% 20%;
+  margin: 5% 20%;
 }
