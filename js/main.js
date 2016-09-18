@@ -13,8 +13,8 @@ function sectionParser(name, data){
 
 // Appends the data and template for specified section
 // Retrieve the template data from the HTML (jQuery is used here).
-function appendDataAndTemplate(name, data){
-  var template = $('#handlebars-articles').html();
+function appendDataAndTemplate(name, data, type){
+  var template = $('#handlebars-articles-' + type).html();
   var templateScript = Handlebars.compile(template);
   var context = data;
   var html = templateScript(context);
@@ -45,14 +45,14 @@ $( document ).ready(function() {
         // The code below is for handlebars ---===
         // Retrieve the template data from the HTML (jQuery is used here).
 
-        appendDataAndTemplate("#A-E-Content",AEList);
-        appendDataAndTemplate("#Graphics-Content",GraphicsList);
-        appendDataAndTemplate("#News-Content",NewsList);
-        appendDataAndTemplate("#Opinon-Content",OpinionList);
-        appendDataAndTemplate("#Prime-Content",PrimeList);
-        appendDataAndTemplate("#Quad-Content",QuadList);
-        appendDataAndTemplate("#Sports-Content",SportsList);
-        appendDataAndTemplate("#Video-Content",VideoList);
+        appendDataAndTemplate("#A-E-Content", AEList, "right");
+        appendDataAndTemplate("#Graphics-Content",GraphicsList, "left");
+        appendDataAndTemplate("#News-Content",NewsList, "right");
+        appendDataAndTemplate("#Opinon-Content",OpinionList, "left");
+        appendDataAndTemplate("#Prime-Content",PrimeList, "right");
+        appendDataAndTemplate("#Quad-Content",QuadList, "left");
+        appendDataAndTemplate("#Sports-Content",SportsList, "right");
+        appendDataAndTemplate("#Video-Content",VideoList, "left");
 
         $('.slider-for').slick({
            slidesToShow: 1,

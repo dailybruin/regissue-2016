@@ -206,7 +206,7 @@
 <!-- slick js  -->
 <script type="text/javascript" src="js/slick.min.js"></script>
 
-<script id="handlebars-articles" type="text/x-handlebars-template">
+<script id="handlebars-articles-left" type="text/x-handlebars-template">
   <div class="col-sm-7">
     <div class="slider-for image-slider">
       {{#each .}}
@@ -222,6 +222,27 @@
         <p>Author: {{this.gsx$authors.$t}}</p>
         <p>Preview: {{this.gsx$previewdescription.$t}}</p>
         </div>
+      {{/each}}
+    </div>
+  </div>
+</script>
+
+<script id="handlebars-articles-right" type="text/x-handlebars-template">
+  <div class="col-sm-5">
+    <div class="slider-nav description-slider">
+      {{#each .}}
+        <div>
+        <p>Headline: {{this.gsx$headline.$t}}</p>
+        <p>Author: {{this.gsx$authors.$t}}</p>
+        <p>Preview: {{this.gsx$previewdescription.$t}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-sm-7">
+    <div class="slider-for image-slider">
+      {{#each .}}
+        <div class="image-wrapper"><img class="article-images" src="{{this.gsx$mainimageurl.$t}}" />"</div>
       {{/each}}
     </div>
   </div>
