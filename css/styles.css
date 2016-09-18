@@ -119,8 +119,10 @@ h2 {
 }
 
 .landing-photos {
-  width: 100%;
   max-height: 100vh;
+  max-width: 100%;
+  display: block;
+  margin: auto;
   opacity: 0;
 }
 
