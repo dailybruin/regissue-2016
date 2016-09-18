@@ -36,7 +36,7 @@ $( document ).ready(function() {
         var AEList = sectionParser("A&E", data);
         var GraphicsList = sectionParser("Graphics", data);
         var NewsList = sectionParser("News", data);
-        var OpinionList = sectionParser("Opinon", data);
+        var OpinionList = sectionParser("Opinion", data);
         var PrimeList = sectionParser("Prime", data);
         var QuadList = sectionParser("Blogging", data);
         var SportsList = sectionParser("Sports", data);
@@ -48,7 +48,7 @@ $( document ).ready(function() {
         appendDataAndTemplate("#A-E-Content", AEList, "right");
         appendDataAndTemplate("#Graphics-Content",GraphicsList, "left");
         appendDataAndTemplate("#News-Content",NewsList, "right");
-        appendDataAndTemplate("#Opinon-Content",OpinionList, "left");
+        appendDataAndTemplate("#Opinion-Content",OpinionList, "left");
         appendDataAndTemplate("#Prime-Content",PrimeList, "right");
         appendDataAndTemplate("#Quad-Content",QuadList, "left");
         appendDataAndTemplate("#Sports-Content",SportsList, "right");
