@@ -13,12 +13,12 @@ function sectionParser(name, data){
 
 // Appends the data and template for specified section
 // Retrieve the template data from the HTML (jQuery is used here).
-function appendDataAndTemplate(name, data){
-  var template = $('#handlebars-articles').html();
+function appendDataAndTemplate(name, data, type){
+  var template = $('#handlebars-articles-' + type).html();
   var templateScript = Handlebars.compile(template);
   var context = data;
   var html = templateScript(context);
-  $(name).append(html);
+  $(name).replaceWith(html);
 }
 
 $( document ).ready(function() {
@@ -36,7 +36,7 @@ $( document ).ready(function() {
         var AEList = sectionParser("A&E", data);
         var GraphicsList = sectionParser("Graphics", data);
         var NewsList = sectionParser("News", data);
-        var OpinionList = sectionParser("Opinon", data);
+        var OpinionList = sectionParser("Opinion", data);
         var PrimeList = sectionParser("Prime", data);
         var QuadList = sectionParser("Blogging", data);
         var SportsList = sectionParser("Sports", data);
@@ -45,21 +45,21 @@ $( document ).ready(function() {
         // The code below is for handlebars ---===
         // Retrieve the template data from the HTML (jQuery is used here).
 
-        appendDataAndTemplate("#A-E-Content",AEList);
-        appendDataAndTemplate("#Graphics-Content",GraphicsList);
-        appendDataAndTemplate("#News-Content",NewsList);
-        appendDataAndTemplate("#Opinon-Content",OpinionList);
-        appendDataAndTemplate("#Prime-Content",PrimeList);
-        appendDataAndTemplate("#Quad-Content",QuadList);
-        appendDataAndTemplate("#Sports-Content",SportsList);
-        appendDataAndTemplate("#Video-Content",VideoList);
+        appendDataAndTemplate("#A-E-Content", AEList, "right");
+        appendDataAndTemplate("#Graphics-Content",GraphicsList, "left");
+        appendDataAndTemplate("#News-Content",NewsList, "right");
+        appendDataAndTemplate("#Opinion-Content",OpinionList, "left");
+        appendDataAndTemplate("#Prime-Content",PrimeList, "right");
+        appendDataAndTemplate("#Quad-Content",QuadList, "left");
+        appendDataAndTemplate("#Sports-Content",SportsList, "right");
+        appendDataAndTemplate("#Video-Content",VideoList, "left");
 
         $('.slider-for').slick({
            slidesToShow: 1,
            slidesToScroll: 1,
            arrows: false,
            fade: true,
-           asNavFor: '.slider-nav'
+           asNavFor: '.slider-nav',
         });
 
         $('.slider-nav').slick({
@@ -67,8 +67,8 @@ $( document ).ready(function() {
            slidesToScroll: 1,
            asNavFor: '.slider-for',
            dots: true,
-           adaptiveHeight: true,
-           vertcal: true,
+          //  autoplay: true,
+          //  autoplaySpeed: 4000,
         });
 
   	}
