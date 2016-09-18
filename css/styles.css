@@ -33,3 +33,8 @@ h2 {
 .description-slider{
   margin: 5% 20%;
 }
+
+.article-images{
+  max-height: 480px;
+  align: center;
+}
