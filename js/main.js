@@ -1,3 +1,16 @@
+//this function parses the data specific for each section
+function sectionParser(name, data){
+  var list = [];
+  for (var i = 0; i < data.length; i++){
+    if (data[i].gsx$section.$t == name){
+      list.push(data[i]);
+    }
+  }
+  console.log(list);
+
+  return list
+}
+
 $( document ).ready(function() {
 
   //lets get some google spreadsheet data :D
@@ -9,7 +22,7 @@ $( document ).ready(function() {
   			data = data.feed.entry;
         console.log(data);
 
-        data = data.slice(0,5);
+        sectionParser("A&E", data);
 
         // The code below is for handlebars ---===
         // Retrieve the template data from the HTML (jQuery is used here).
