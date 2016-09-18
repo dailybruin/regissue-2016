@@ -56,12 +56,6 @@ $( document ).ready(function() {
 
   	}
   }).done(function(){
-    $('.slider-for').slick({
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       arrows: false,
-       asNavFor: '.slider-nav',
-    });
 
     $('.slider-nav').slick({
        slidesToShow: 1,
@@ -70,6 +64,13 @@ $( document ).ready(function() {
        dots: true,
       //  autoplay: true,
       //  autoplaySpeed: 4000,
+    });
+
+    $('.slider-for').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: false,
+       asNavFor: '.slider-nav',
     });
 
   }
