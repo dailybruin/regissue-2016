@@ -24,6 +24,7 @@ body{
 
 h2 {
   text-align: center;
+  padding-top: 100px;
 }
 
 .image-slider{
@@ -37,4 +38,8 @@ h2 {
 .article-images{
   max-height: 480px;
   align: center;
+}
+
+#landing-photos {
+
 }
