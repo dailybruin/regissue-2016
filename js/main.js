@@ -23,6 +23,11 @@ function appendDataAndTemplate(name, data, type){
 
 $( document ).ready(function() {
 
+  $(".navbar").delay(200).fadeTo(1000, 1);
+  $("#landing-1").delay(1000).fadeTo(1000, 1);
+  $("#landing-2").delay(1500).fadeTo(1000, 1);
+  $("#landing-3").delay(2000).fadeTo(1000, 1);
+
   //lets get some google spreadsheet data :D
   $.ajax({
     dataType: "json",
