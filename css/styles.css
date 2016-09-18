@@ -1,4 +1,5 @@
 body{
+  height: 100%;
 }
 
 .navbar {
@@ -43,6 +44,29 @@ h2 {
   margin: auto;
 }
 
-#landing-photos {
+.landing-images {
+  margin: 5%;
+  width: 100%;
+}
 
+#landing-photos {
+  float: left;
+  width: 30%;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.overlay-text {
+  display: inline-block;
+  position: relative;
 }
