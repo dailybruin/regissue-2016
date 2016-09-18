@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        sectionsColor: ['#FFF', '#dfd05d', '#86C67C', '#5181', '#d2232a', '#ffdea3', '#300f24', '#81a2d5', '#54595a'],
+        sectionsColor: ['#FFFFFF', '#EEC900', '#009900', '#4c4cff', '#d2232a', '#ffa500', '#551a8b', ' #000080', '#54595a'],
         anchors: ['zeroPage', 'firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage'],
         menu: '#menu',
 
